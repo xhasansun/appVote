@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Live Preview
+
+For a live preview of the application, visit [https://app-vote-cli.vercel.app/](https://app-vote-cli.vercel.app/).
+
+
+
 ## Getting Started
 
 First, run the development server:
