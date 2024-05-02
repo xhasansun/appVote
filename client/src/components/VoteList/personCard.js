@@ -16,7 +16,6 @@ const PersonCard = ({ data }) => {
         if (getDataFromLocalStorage) {
             setUsers(getDataFromLocalStorage)
         } else {
-            console.log("param")
             const sortedData = data.slice().sort((a, b) => b.rating - a.rating);
             setUsers(sortedData)
         }
