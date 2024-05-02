@@ -4,6 +4,8 @@ import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
 import { useParams } from 'next/navigation'
 import { gql, useQuery } from '@apollo/client'
+import Loading from '@/components/Loading/page';
+import Error from 'next/error';
 
 const UserDetail = () => {
 
@@ -29,8 +31,8 @@ const UserDetail = () => {
     }
   }, [data])
 
-  if (loading) return <p>Loading...</p>
-  if (error) return <p>Error :(</p>
+  if (loading) return <Loading />
+  if (error) return <Error />
 
   const header = (
     <img alt="Card" src={`https://i.pravatar.cc/150?img=${user?.image}`} />
